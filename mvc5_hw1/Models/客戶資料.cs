@@ -33,7 +33,7 @@ namespace mvc5_hw1.Models
         public string 傳真 { get; set; }
         public string 地址 { get; set; }
         [Required(ErrorMessage = "Email必填")]
-        [EmailAddress(ErrorMessage = "Invalid Email Address")]
+        [EmailAddress(ErrorMessage = "Email格式錯誤")]
         public string Email { get; set; }
     
         public virtual ICollection<客戶銀行資訊> 客戶銀行資訊 { get; set; }
